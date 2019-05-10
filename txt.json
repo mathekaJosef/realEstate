@@ -1,0 +1,17 @@
+{
+    "messages": [
+            {
+                "name": "Matheka Josef",
+                "message": "Auma has been the best. She has helped me to find my dream rental home. Thanks for support Auma!!"
+            },
+            {
+                "name": "Dennis Kisaka",
+                "quote": "${ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmtempor incididunt ut labore et dolore magna aliqua, Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commod consequat"
+            },
+            {
+                "name": "Morris Mabese",
+                "quote": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            }
+        ] 
+        
+}

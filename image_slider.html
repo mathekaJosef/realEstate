@@ -1,0 +1,160 @@
+<head>
+  <meta charset="UTF-8">
+  <title>Real Estate</title>
+  <link rel="icon" href="estate14.jpg">
+  <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+</head>
+    <style type="text/css">
+       * {
+              margin: 0;
+              padding: 0;
+            }
+
+            body {
+              padding: 20px;
+              background: #eee;
+              user-select: none;
+            }
+
+            [type=radio] {
+              display: none;
+            }
+
+            #slider {
+              height: 35vw;
+              position: relative;
+              perspective: 1000px;
+              transform-style: preserve-3d;
+            }
+
+            #slider label {
+              margin: auto;
+              width: 60%;
+              height: 100%;
+              border-radius: 4px;
+              position: absolute;
+              left: 0; right: 0;
+              cursor: pointer;
+              transition: transform 0.4s ease;
+            }
+
+            #s1:checked ~ #slide8, #s2:checked ~ #slide9,
+            #s3:checked ~ #slide1, #s4:checked ~ #slide2,
+            #s5:checked ~ #slide3, #s6:checked ~ #slide4
+            #s7:checked ~ #slide5, #s8:checked ~ #slide6
+            #s9:checked ~ #slide7 {
+              box-shadow: 0 1px 4px 0 rgba(0,0,0,.37);
+              transform: translate3d(-30%,0,-200px);
+            }
+
+            #s1:checked ~ #slide9, #s2:checked ~ #slide1,
+            #s3:checked ~ #slide2, #s4:checked ~ #slide3,
+            #s5:checked ~ #slide3, #s6:checked ~ #slide4,
+            #s7:checked ~ #slide5, #s8:checked ~ #slide6,
+            #s9:checked ~ #slide8 {
+              box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba(0,0,0,.2);
+              transform: translate3d(-15%,0,-100px);
+            }
+
+            #s1:checked ~ #slide1, #s2:checked ~ #slide2,
+            #s3:checked ~ #slide3, #s4:checked ~ #slide4,
+            #s5:checked ~ #slide5, #s6:checked ~ #slide6,
+            #s7:checked ~ #slide7, #s8:checked ~ #slide8,
+            #s9:checked ~ #slide9 {
+              box-shadow: 0 13px 25px 0 rgba(0,0,0,.3), 0 11px 7px 0 rgba(0,0,0,.19);
+              transform: translate3d(0,0,0);
+            }
+
+            #s1:checked ~ #slide2, #s2:checked ~ #slide3,
+            #s3:checked ~ #slide4, #s4:checked ~ #slide5,
+            #s5:checked ~ #slide6, #s6:checked ~ #slide7,
+            #s7:checked ~ #slide8, #s8:checked ~ #slide9,
+            #s9:checked ~ #slide1 {
+              box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba(0,0,0,.2);
+              transform: translate3d(15%,0,-100px);
+            }
+
+            #s1:checked ~ #slide3, #s2:checked ~ #slide4,
+            #s3:checked ~ #slide5, #s4:checked ~ #slide6,
+            #s5:checked ~ #slide7, #s6:checked ~ #slide8,
+            #s7:checked ~ #slide9, #s8:checked ~ #slide1,
+            #s9:checked ~ #slide2 {
+              box-shadow: 0 1px 4px 0 rgba(0,0,0,.37);
+              transform: translate3d(30%,0,-200px);
+            }
+
+            #s1:checked ~ #slide4, #s2:checked ~ #slide5,
+            #s3:checked ~ #slide6, #s4:checked ~ #slide7,
+            #s5:checked ~ #slide8, #s6:checked ~ #slide9,
+            #s7:checked ~ #slide1, #s8:checked ~ #slide2,
+            #s9:checked ~ #slide3 {
+              box-shadow: 0 1px 4px 0 rgba(0,0,0,.37);
+              transform: translate3d(30%,0,-200px);
+            }
+
+            #s1:checked ~ #slide5, #s2:checked ~ #slide6,
+            #s3:checked ~ #slide7, #s4:checked ~ #slide8,
+            #s5:checked ~ #slide9, #s6:checked ~ #slide1,
+            #s7:checked ~ #slide2, #s8:checked ~ #slide3,
+            #s9:checked ~ #slide4 {
+              box-shadow: 0 1px 4px 0 rgba(0,0,0,.37);
+              transform: translate3d(30%,0,-200px);
+            }
+
+            #s1:checked ~ #slide6, #s2:checked ~ #slide7,
+            #s3:checked ~ #slide8, #s4:checked ~ #slide9,
+            #s5:checked ~ #slide1, #s6:checked ~ #slide2,
+            #s7:checked ~ #slide3, #s8:checked ~ #slide4,
+            #s9:checked ~ #slide5 {
+              box-shadow: 0 1px 4px 0 rgba(0,0,0,.37);
+              transform: translate3d(30%,0,-200px);
+            }
+
+            #s1:checked ~ #slide7, #s2:checked ~ #slide8,
+            #s3:checked ~ #slide9, #s4:checked ~ #slide1,
+            #s5:checked ~ #slide2, #s6:checked ~ #slide3,
+            #s7:checked ~ #slide4, #s8:checked ~ #slide5,
+            #s9:checked ~ #slide6 {
+              box-shadow: 0 1px 4px 0 rgba(0,0,0,.37);
+              transform: translate3d(30%,0,-200px);
+            }
+
+            #slide1 { background-image: url('estate11.jpg'); background-size: cover;}
+            #slide2 { background-image: url('our_client5.jpg'); background-size: cover;}
+            #slide3 { background-image: url('interior29.jpg'); background-size: cover;}
+            #slide4 { background-image: url('interior24.jpg'); background-size: cover;}
+            #slide5 { background-image: url('our_client3.jpg'); background-size: cover;}
+            #slide6 { background-image: url('our_client6.jpg'); background-size: cover;}
+            #slide7 { background-image: url('interior26.jpg'); background-size: cover;}
+            #slide8 { background-image: url('our_client8.jpg'); background-size: cover;}
+            #slide9 { background-image: url('our_client22.jpg'); background-size: cover;}
+    </style>
+<body> 
+    <section id="slider">
+      <input type="radio" name="slider" id="s1">
+      <input type="radio" name="slider" id="s2">
+      <input type="radio" name="slider" id="s3" checked>
+      <input type="radio" name="slider" id="s4">
+      <input type="radio" name="slider" id="s5">
+      <input type="radio" name="slider" id="s6">
+      <input type="radio" name="slider" id="s7">
+      <input type="radio" name="slider" id="s8">
+      <input type="radio" name="slider" id="s9">
+      <label for="s1" id="slide1"></label>
+      <label for="s2" id="slide2"></label>
+      <label for="s3" id="slide3"></label>
+      <label for="s4" id="slide4"></label>
+      <label for="s5" id="slide5"></label>
+      <label for="s6" id="slide6"></label>
+      <label for="s7" id="slide7"></label>
+      <label for="s8" id="slide8"></label>
+      <label for="s9" id="slide9"></label>
+    </section>
+    <script type="text/javascript"> 
+      
+   </script>
+</body>
+</html>

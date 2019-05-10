@@ -1,0 +1,191 @@
+  <!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Real Estate</title>
+  <link rel="icon" href="estate14.jpg">
+  <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="prevailing_estates.css">
+    <script type="text/javascript" src="prevailing_estates.js"></script>
+</head>
+    <style type="text/css">
+       
+    </style>
+<body> 
+    <div class="position">
+         <a href="#footer_id"><i class="fa fa-long-arrow-down" style="text-decoration: none; color: rgb(179, 179, 255);"></i></a>
+    </div>
+    <div class="position1">
+         <a href="#contact_us"><i class="fa fa-long-arrow-up" style="text-decoration: none; color: rgb(179, 179, 255);"></i></a>
+    </div>
+  <header class="header">
+        <nav class="navigation">
+            <section class="navigation_icon">
+                <span class="topbar"></span>
+                <span class="middlebar"></span>
+                <span class="bottombar"></span>
+            </section>
+            
+            <ul class="navigation_ul">
+                <li><a href="index.html">HOME</a></li>
+                <p id="p_li"></p>
+                <li><a href="about_us.html">ABOUT US</a></li>
+                <p id="p_li"></p>
+                <li><a href="details.html">DETAILS</a></li>
+                <p id="p_li"></p>
+                <li><a href="our_grid.html">OUR GRID</a></li>
+                <p id="p_li"></p>
+                <li><a href="contact_us.html">CONTACT US</a></li>
+            </ul> 
+        </nav>
+        
+         <section class="contact_us" id="contact_us">
+            <div id="banner-contact_us">
+                <div id="bg-color-contact_us">
+                    <ul class="breadcrumb">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="our_grid.html">Our Grid</a></li>
+                    </ul>
+                    <p class="contact_header">Our Grid</p>
+                    <p id="line_contact"></p>
+
+                    <div class="well" id="well_contact">
+                        <div class="row">
+                            <h1 style="text-align: center; color: red;">Page under construction!!</h1>
+                        </div>
+                    </div>
+                        
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <section class="footer" id="footer_id">
+        <div id="banner-footer">
+                 <div id="bg-color-footer">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <h2 id="footer_description">Get In Touch</h2>
+                            <p id="f_line1"></p>
+                            <br>
+                            <p id="p_footer">
+                                ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat..
+                            </p>
+                            <i class="fa fa-phone" id="f-phone" style="color: rgba(117, 117, 250, 0.9)"> <h5 id="fo_phone">Call +254710123456</h5></i>
+                            <br>
+                            <i class="fa fa-envelope" id="f-envelope"  style="color: rgba(117, 117, 250, 0.9)"> <h5 id="fo_envelope">waiganjo@gmail.com</h5></i>
+                            <br>
+                            <div class="form-group">
+                               <button type="submit" name="submit" class="btn btn-primary" id="f_button">Schedule An Appointment <i class="fa fa-clipboard"></i></button>
+                           </div>
+                        </div>
+
+                        <div class="col-sm-6">
+                            <div class="well" id="f_well">
+                                <div class="mapouter"><div class="gmap_canvas">
+                                    <iframe width="570" height="310" id="gmap_canvas" src="https://maps.google.com/maps?q=rongo%20university&t=&z=19&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.crocothemes.net"></a></div><style>.mapouter{text-align:right;height:310px;width:570px;}.gmap_canvas {overflow:hidden;background:none!important;height:310px;width:570px;}</style></div>
+
+                                    
+                                <!-- <div class="well" id="sub_well">
+                                    <div class="address">
+                                        <p id="p_header"><b>Office Address</b></p>
+                                        <p id="p_address">121 Street, Rongo</p>
+                                        <p id="p_address">Migori County, Kenya</p>
+                                        <p id="p_address">Tell. 09876544321</p>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <section class="f_navigation">
+                        <div class="col-sm-6">
+                            <h5 id="f_copyright">&copy;Copyright 2019</h5>
+                        </div>
+                        <div class="col-sm-6">
+                            <nav class="nav nav-navbar" >
+                                <ul class="nav navbar-nav">
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="about_us.html">About Us</a></li>
+                                    <li><a href="details.html">Details</a></li>
+                                    <li><a href="our_grid.html">Our Grid</a></li>
+                                    <li><a href="contact_us.html">Contact Us</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </section>
+                 </div>
+        </div>
+    </section>
+    <script type="text/javascript"> 
+       (function() {
+           var documentElem = $(document),
+               position = $('.position'),
+                   lastScrollTop = 0;
+           documentElem.on('scroll', function(){
+               var currentScrollTop = $(this).scrollTop();
+               
+               //scroll down
+               if(currentScrollTop > lastScrollTop){
+                   position.addClass('hidden');
+               }else{
+                   position.removeClass('hidden');
+               }
+               lastScrollTop = currentScrollTop;
+           });
+       })();
+       
+       (function() {
+           var documentElement = $(document),
+               position1 = $('.position1'),
+                   lastScrollTop = 0;
+           documentElement.on('scroll', function(){
+               var qurrentScrollTop = $(this).scrollTop();
+               
+               //scroll down
+               if(qurrentScrollTop > lastScrollTop){
+                   position1.removeClass('hidden');
+               }else{
+                   position1.addClass('hidden');
+               }
+               lastScrollTop = qurrentScrollTop;
+           });
+       })();
+   </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
