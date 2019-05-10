@@ -28,7 +28,7 @@
          xhr.send();*/
 
 //scroll assistants
-         (function() {
+         (function() { 
            var documentElem = $(document),
                position = $('.position'),
                    lastScrollTop = 0;
